@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pavneet.tankcleaner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Magnum"
+        android:supportsRtl="true"
+        >
+        <activity
+            android:name=".Start"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.full">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Form"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MidActivity"
+            android:label="Magnum"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Price"
+            android:label="Price List"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUs"
+            android:label="About Us"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Help"
+            android:label="Help"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+    </application>
+
+</manifest>
